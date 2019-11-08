@@ -1,0 +1,11 @@
+{
+  "name": "number-format",
+  "version": "1.0.0",
+  "main": "src/main.mjs",
+  "scripts": {
+    "test": "node --experimental-modules src/test/runTests.mjs"
+  },
+  "author": "Paul Erickson",
+  "license": "ISC",
+  "dependencies": {}
+}
