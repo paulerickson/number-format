@@ -8,12 +8,17 @@ export default class WordFormattableNumber extends Number {
     Number.prototype.toWordString = this.prototype.toWordString;
   }
 
-  toWordString() {
-    if (Number.isNaN(this)) {
-      return '';
+  toWordString(javaLimits = true) {
+    if (Number.isNaN(this) || Math.floor(this) != this) {
+      return undefined;
+    }
+    if (javaLimits) {
+      if (this < -2147483648 || this > 2147483647) {
+        return undefined;
+      }
     }
     if (this < 0) {
-      return `Negative ${(-this).toWordString().toLowerCase()}`;
+      return `Negative ${(-this).toWordString(false).toLowerCase()}`;
     }
     switch(Number(this)) {
       case Infinity: return 'Infinity';

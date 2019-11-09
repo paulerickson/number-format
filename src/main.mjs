@@ -1,3 +1,3 @@
-import WordFormattableNumber from './WordFormattableNumber.mjs';
+import WordFormattableNumber from './main/WordFormattableNumber.mjs';
 
-export default { WordFormattableNumber };
+export default WordFormattableNumber;
