@@ -53,8 +53,8 @@ export default class WordFormattableNumberTest {
   }
 
   'words for numbers above and below the java limits are undefined'() {
-    assert.equal((-2147483648).toWordString(), 'Negative two quadrillion one trillion four billion seven million four hundred thousand eighty three thousand six hundred and forty eight');
-    assert.equal((2147483647).toWordString(), 'Two quadrillion one trillion four billion seven million four hundred thousand eighty three thousand six hundred and forty seven');
+    assert.equal((-2147483648).toWordString(), 'Negative two billion one hundred and forty seven million four hundred and eighty three thousand six hundred and forty eight');
+    assert.equal((2147483647).toWordString(), 'Two billion one hundred and forty seven million four hundred and eighty three thousand six hundred and forty seven');
     assert.equal((-2147483649).toWordString(), undefined);
     assert.equal((2147483648).toWordString(), undefined);
     assert.equal((1000000000500).toWordString(), undefined);

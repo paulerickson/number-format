@@ -52,12 +52,11 @@ export default class WordFormattableNumber extends Number {
       case 90: return 'Ninety';
     }
     const magnitudes = [
-      { magnitude: 10000000000, unit: 'quintillion' },
-      { magnitude: 1000000000, unit: 'quadrillion' },
-      { magnitude: 100000000, unit: 'trillion' },
-      { magnitude: 10000000, unit: 'billion' },
+      { magnitude: 1000000000000000000, unit: 'quintillion' },
+      { magnitude: 1000000000000000, unit: 'quadrillion' },
+      { magnitude: 1000000000000, unit: 'trillion' },
+      { magnitude: 1000000000, unit: 'billion' },
       { magnitude: 1000000, unit: 'million' },
-      { magnitude: 100000, unit: 'hundred thousand' },
       { magnitude: 1000, unit: 'thousand' },
       { magnitude: 100, unit: 'hundred' },
       { magnitude: 10 },
